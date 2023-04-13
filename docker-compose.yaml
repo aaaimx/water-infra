@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  web:
+    container_name: testing
+    image: newtest:latest
+    ports:
+      - 80:80
