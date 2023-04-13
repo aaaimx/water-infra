@@ -1,6 +1,6 @@
-# Infrastructure - documentation.
+# WaterAI - Infrastructure - documentation.
 ```
-on this repository you can found all code relationated with infrastructure for a bootcamp project
+on this repository you can found all code relationated with infrastructure for a water ai project
 ```
 
 ### Pre-requisites.
@@ -15,9 +15,9 @@ on this repository you can found all code relationated with infrastructure for a
 ![diagram](./assets/diagram.png)
 
 
-### 1.- Configure your new AWS profile for terraform (`free-account` is an example name, you can use the same).
+### 1.- Configure your new AWS profile for terraform (`new-account` is an example name, you can use the same).
 
-    aws configure --profile free-account
+    aws configure --profile new-account
 
 #### Watch profiles created.
 
@@ -25,7 +25,7 @@ on this repository you can found all code relationated with infrastructure for a
 
 #### Example to use a profile.
 
-    aws ec2 describe-instances --profile free-account
+    aws ec2 describe-instances --profile new-account
 
 ### 2.- Configure AWS infrastructure with terraform.
 
@@ -47,9 +47,3 @@ then copy the output called `dns_name` and enjoy!
 ### 3.- Delete infrastructure created.
 
     terraform destroy
-
-### 4.- improvements
-
-    - Attach a DNS Record
-    - Attach a SSL certificate for more security.
-    - Be more explicit on the documentation description.
